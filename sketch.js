@@ -10,14 +10,14 @@ for (let i = 0; i < 4000; i++) {
 }
 
 function draw() {
-background(220);
+background(mouseX,mouseY,100);
  if (keyIsPressed===true) {
     sceneNum++;
   }
     //made it so that a key press starts the art
   
   if (sceneNum == 0) {
-    background(173, 239, 255);
+    background(mouseX, mouseY, 100);
     fill(7, 14, 145);
     textSize(25);
     text("rainbow dot art", 100, 100);
@@ -32,10 +32,9 @@ background(220);
     }
 
   } else if (sceneNum == 2) {
-    background(50, 200, 140);
+    background(mouseX, mouseY, 100); // changed backgrounds to rainbow colors
     textSize(30);
-    text("Thank you for watching!", 20, 20);
+    text("", 20, 20);
   
   }
 }
-else if (keyIsPressed===true && sceneNum===3)

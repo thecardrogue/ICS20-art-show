@@ -35,5 +35,7 @@ background(220);
     background(50, 200, 140);
     textSize(30);
     text("Thank you for watching!", 20, 20);
+  
   }
 }
+else if (keyIsPressed===true && sceneNum===3)
